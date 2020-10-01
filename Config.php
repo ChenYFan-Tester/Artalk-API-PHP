@@ -4,11 +4,11 @@ return [
   'site_name' => 'XXX 的博客',
   // 支持跨域访问的域名
   'allow_origin' => [
-    'http://localhost:8080' // 或 '*' 跨域无限制
+    '*' // 或 '*' 跨域无限制
   ],
   // 管理员用户
   'admin_users' => [
-    ['nick' => 'admin', 'email' => 'admin@example.com', 'password' => '', 'badge_name' => '管理员', 'badge_color' => '#ffa928']
+    ['nick' => 'admin', 'email' => 'admin@example.com', 'password' => 'admin', 'badge_name' => '管理员', 'badge_color' => '#ffa928']
   ],
   // 验证码
   'captcha' => [
@@ -17,7 +17,7 @@ return [
   ],
   // 邮件通知
   'email' => [
-    'on' => true, // 总开关
+    'on' => false, // 总开关
     'admin_addr' => 'example@example.com', // 管理员邮箱地址（文章收到评论时通知）
     'sender_type' => 'smtp', // 发送方式（ali_dm or smtp）
     'mail_title' => '您在 [站名] 收到了新的回复',
